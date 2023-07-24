@@ -1,0 +1,164 @@
+.ratingWindowStyles {
+    height: 90%;
+}
+.ratingWindowStyles .modal{
+    width: 450px;
+    height: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px var(--main-color) solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.ratingWindowStyles .titulo-restaurante{
+    margin: 10px;
+}
+.ratingWindowStyles .contenedor-dar-puntuacion{
+    width: 80%;
+}
+.ratingWindowStyles .contenedor-dar-puntuacion h3{
+    height: 15px;
+}
+.ratingWindowStyles .contenerdor-dar-comentario{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.ratingWindowStyles .contenerdor-dar-comentario h3{
+    height: 10px;
+}
+.ratingWindowStyles .contenerdor-dar-comentario textarea {
+    resize: none;
+    border: 2px solid rgba(168, 45, 0, 0.75);
+    border-radius: 0.5em;
+    height: 50px;
+    font-family: 'Quicksand';
+    color: brown;
+    font-size: medium;
+}
+.ratingWindowStyles .estrellas-modal {
+    display: flex;
+    justify-content: center;
+}
+.ratingWindowStyles .estrellas-modal svg {
+    color: #ffbd52;
+    font-size: 32px;
+    margin: 0 3px 0 0;
+}
+.ratingWindowStyles .estrellas-modal svg:hover {
+    cursor: pointer;
+}
+.ratingWindowStyles .botones-puntuar{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ratingWindowStyles .boton-puntuacion-enviar {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.ratingWindowStyles .boton-puntuacion-cancelar {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.ratingWindowStyles .alerta{
+    width: 350px;
+    height: 60px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px var(--main-color) solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.ratingWindowStyles .alerta p{
+    width: 90%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.ratingWindowStyles  button:hover {
+    background-color: #f05d28;
+    cursor: pointer;
+}
+
+.ratingWindowStyles .contenedor-reseñas{
+    margin-top: 20px;
+    width: 80%;
+    height: 40%;
+    border-top: 1px solid rgba(168, 45, 0, 0.75);
+    overflow: auto;
+    padding-left: 10px;
+}
+.ratingWindowStyles .contenedor-reseñas .reseñas{
+    width: 95%;
+
+}
+.ratingWindowStyles .contenedor-reseñas .reseña{
+    margin-bottom: 15px;
+}
+.ratingWindowStyles .contenedor-reseñas .reseña .nombre-estrellas {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.ratingWindowStyles .contenedor-reseñas .reseña .nombre-estrellas p{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 700;
+}
+.ratingWindowStyles .contenedor-reseñas .reseña .nombre-estrellas .estrellas-usuario svg{
+    color: #ffbd52;
+}
+
+.ratingWindowStyles .contenedor-reseñas .comentario-usuario{
+    margin-bottom: 5px;
+}
+
+@media (max-width:1024px) {
+    .ratingWindowStyles .modal{
+        width: 400px;
+    }
+}
+@media (max-width:768px) {
+    .ratingWindowStyles .contenedor-dar-puntuacion h3, .ratingWindowStyles .contenerdor-dar-comentario h3{
+        font-size: 1rem;
+    }
+    .ratingWindowStyles .contenedor-reseñas{
+        font-size: .9rem;
+    }
+    .ratingWindowStyles .estrellas-modal svg {
+        font-size: 26px;
+    }
+}
+@media (max-width:480px) {
+    .ratingWindowStyles .modal{
+        width: 350px;
+    }
+    .ratingWindowStyles .contenerdor-dar-comentario textarea {
+        height: 50px;
+        width: 280px;
+    }
+}
+
+

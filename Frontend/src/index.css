@@ -1,0 +1,138 @@
+/*--------------- Variables css ---------------*/
+
+:root {
+  --main-color: #A52A2A;
+  --secondary-color: #FF4500;
+  --third-color: #383b58;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--main-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+/* ---------------------- VISTA HOME -----------------------*/
+section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.home {
+  min-height: 110vh;
+  padding-bottom: 80px;
+}
+
+
+/*--------------------------  Slider Home  ----------------------------*/
+div.swiper {
+  width: 80% !important;
+  padding: 3%;
+}
+
+div.swiper-slide {
+  width: 30% !important;
+}
+
+div.swiper-slide .article-categoria {
+  margin: 0;
+  width: 100%;
+}
+
+/* ---------------------- VISTA ADMINISTRACION -----------------------*/
+.administracion-panel {
+  width: 90%;
+  padding: 20px;
+}
+
+.administracion-panel h2 {
+  margin: 10px;
+}
+
+.administracion-panel ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  padding: 0;
+}
+
+.administracion-panel li a {
+  display: block;
+  background-color: #FF4500;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  height: 23px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.administracion-panel li a:hover {
+  cursor: pointer;
+  background-color: #fa5b21;
+}
+
+@media (max-width:850px) {
+
+  /*--------------------------  Slider Home  ----------------------------*/
+  div.swiper {
+    width: 70% !important;
+  }
+  div.swiper-slide {
+    width: 50% !important;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  main {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  /*--------------------------  Slider Home  ----------------------------*/
+  div.swiper {
+    box-sizing: border-box;
+    width: 70% !important;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 20%;
+  }
+  div.swiper-slide {
+    width: 100% !important;
+    
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ---------------------- VISTA ADMINISTRACION -----------------------*/
+  .administracion-panel h2 {
+    font-size: 1.2rem;
+  }
+
+  .administracion-panel ul li {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .administracion-panel li span {
+    font-size: .9rem;
+  }
+
+}
